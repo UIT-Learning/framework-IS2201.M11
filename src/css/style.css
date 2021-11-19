@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Quicksand";
+}
+
+body {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+/* Line */
+.line {
+    width: 90%;
+    height: 1px;
+    background-color: #393c49;
+    margin: auto;
+}
+
+.line1 {
+    width: 90%;
+    height: 1px;
+    background-color: #393c49;
+    margin: auto;
+}
+
+.line2 {
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+    width: 1px;
+    height: 100%;
+    background-color: #393c49;
+}
+
+/*  */
+
+/* Title */
+.title {
+    padding-top: 5px;
+    padding-left: 5%;
+    color: #fefefe;
+    /* user-select: none; */
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.title1 {
+    padding-top: 5px;
+    padding-left: 5%;
+    color: #fefefe;
+    /* user-select: none; */
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.title2 {
+    padding-top: 10px;
+    padding-left: 5%;
+    font-size: 14px;
+    font-weight: 200;
+    color: #b1afaf;
+    /* user-select: none; */
+}
+
+.title3 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 10px;
+    padding-right: 5%;
+    font-size: 14px;
+    font-weight: 200;
+    color: #b1afaf;
+    /* user-select: none; */
+}
+
+/*  */
+
+/* Hiden */
+
+.hide {
+    position: fixed;
+    height: 100vh;
+    width: 0px;
+    background-color: black;
+    opacity: 60%;
+    transition: width 0.4s;
+}
+
+.hide1 {
+    width: 100%;
+}
+
+/*  */
+/* Row title */
+
+.row-title {
+    width: 90%;
+    position: relative;
+    left: 5%;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #fefefe;
+    font-weight: 500;
+    font-size: 15px;
+    /* user-select: none; */
+}
+
+/*  */
+/* Order detail */
+.order-detail {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 500px;
+    width: 700px;
+    background-color: #262837;
+    border-radius: 20px;
+    flex-flow: column;
+}
+
+.order-detail > .line1 {
+    position: absolute;
+    bottom: 40px;
+    left: 5%;
+}
+
+.order-detail-info {
+    width: 90%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #fefefe;
+    font-weight: 500;
+    font-size: 15px;
+    /* user-select: none; */
+    display: inline-flex;
+}
+
+.order-detail-info div div {
+    margin-top: 10px;
+}
+
+.order-detail-info1 {
+    width: 50%;
+    position: relative;
+    left: 0;
+}
+
+.order-detail-info2 {
+    width: 50%;
+    position: relative;
+    left: 0;
+}
+
+.order-detail-list {
+    position: relative;
+    left: 5%;
+    width: 90%;
+    height: calc(100% - 220px);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.order-detail-list > table tr > th {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.order-detail-list > table tr > td {
+    color: #b1afaf;
+}
+
+.order-detail-list > table tr > th,
+.order-detail-list > table tr > td {
+    padding: 8px 8px 8px 10px !important;
+}
+
+.order-detail-list > table tr > th:nth-child(1),
+.order-detail-list > table tr > td:nth-child(1) {
+    width: 20%;
+}
+.order-detail-list > table tr > th:nth-child(2),
+.order-detail-list > table tr > td:nth-child(2) {
+    width: 20%;
+}
+.order-detail-list > table tr > th:nth-child(3),
+.order-detail-list > table tr > td:nth-child(3) {
+    width: 20%;
+}
+.order-detail-list > table tr > th:nth-child(4),
+.order-detail-list > table tr > td:nth-child(4) {
+    width: 40%;
+}
+
+.order-detail-total {
+    position: absolute;
+    left: 5%;
+    bottom: 0;
+    width: 90%;
+    height: 35px;
+}
+
+.order-detail-total div {
+    display: inline-flex;
+    color: #fefefe;
+    font-weight: 500;
+    font-size: 15px;
+    /* user-select: none; */
+}
+
+.order-detail-total div:nth-child(1) {
+    width: 10%;
+}
+.order-detail-total button {
+    width: 12%;
+    position: absolute;
+    /* bottom: 20%; */
+    right: 10%;
+    height: 28px;
+    color: #fefefe;
+    background-color: #eb7c68;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+}
+
+.order-detail i {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #eb7c68;
+    font-size: 18px;
+    cursor: pointer;
+}
+/*  */
+
+/* table */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    color: #fefefe;
+}
+
+table th {
+    border: 1px solid #393b4a;
+    text-align: left;
+    padding: 15px 15px 15px 20px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+table td {
+    border: 1px solid #393b4a;
+    text-align: left;
+    padding: 15px 15px 15px 20px;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+table td > i {
+    color: #eb7c68;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+tbody > tr:nth-child(odd) {
+    background-color: #1f1d2c;
+}

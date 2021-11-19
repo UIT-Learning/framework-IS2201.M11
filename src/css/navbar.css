@@ -1,0 +1,119 @@
+.nav-bar {
+    height: 100vh;
+    width: 80px;
+    background-color: #1f1d2c;
+    position: fixed;
+    padding-left: 10px;
+    padding-top: 50px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.nav-bar > a,
+.logout {
+    width: 60px;
+    height: 60px;
+    list-style: none;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px;
+    cursor: pointer;
+}
+
+/* active */
+.nav-bar a.active {
+    background: #262837;
+}
+
+.nav-bar a.active b:nth-child(1) {
+    position: absolute;
+    top: -10px;
+    height: 10px;
+    width: 100%;
+    background-color: #262837;
+}
+
+.nav-bar a.active b:nth-child(1)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1f1d2c;
+    border-bottom-right-radius: 10px;
+}
+
+.nav-bar a.active b:nth-child(2) {
+    position: absolute;
+    bottom: -10px;
+    height: 10px;
+    width: 100%;
+    background-color: #262837;
+}
+
+.nav-bar a.active b:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1f1d2c;
+    border-top-right-radius: 10px;
+}
+
+.nav-bar a.active div {
+    background-color: #eb7c68;
+}
+
+.nav-bar a.active div i {
+    color: white !important;
+}
+/* end active */
+
+.nav-bar > a div,
+.logout > div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 7px;
+}
+
+.nav-bar > a div i,
+.logout > div > i {
+    color: #eb7c68;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 19px;
+}
+
+.nav-bar > div {
+    margin-bottom: 30px;
+}
+
+.nav-bar > div > i {
+    color: #eb7c68;
+    font-size: 25px;
+    position: relative;
+    left: calc(50% - 5px);
+    transform: translate(-50%, 0);
+}
+
+.nav-behind {
+    height: 100vh;
+    width: 80px;
+    background-color: #262837;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
